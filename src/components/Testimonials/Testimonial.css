@@ -1,0 +1,97 @@
+.t-wrapper{
+    padding: 0 3rem 0 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7rem;
+    flex-direction: column;
+    gap: 2;
+    position: relative;
+}
+.t-heading{
+    align-self: flex-start;
+}
+.t-heading>*{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.t-heading span:nth-of-type(2){
+    color: var(--orange);
+}
+.t-blur1{
+    left: 38rem;
+    top: 16rem;
+}
+.t-blur2 {
+    left: 0rem;
+    top: 9rem;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 30rem;
+    height: 12rem;
+    background: rgba(255, 255, 255, 0.25);
+    border: 7px solid var(--blueCard);
+    box-shadow: var(--boxShaodw);
+    border-radius: 20px;
+}
+.testimonial>img{
+    background-size: contain cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+.testimonial>span{
+    color: var(--gray);
+}
+.t-wrapper .swiper{
+    width: 100%;
+    height: 70%;
+}
+.t-wrapper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t-wrapper .swiper-pagination-bullet-active{
+    background: var(--orange);
+    transition-duration: 0.3s;
+    transition: all 0.9 ease-in-out;
+}
+.t-wrapper .swiper-pagination-bullet-active:hover{
+    transform: scale(2);
+}
+@media screen and (max-width: 480px) {
+    .t-wrapper{
+        margin: 0;
+        margin-top: 5rem;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        flex-direction: column;
+        
+    }
+    .t-heading{
+        padding: 0;
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .testimonial{
+        width: 100%;
+        align-items: center;
+        left: -20rem;
+    }
+    .testimonial>img{
+        width: 70px;
+        height: 70px;
+    }
+
+        
+}

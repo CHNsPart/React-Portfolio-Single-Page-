@@ -1,0 +1,86 @@
+.services{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+}
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.awesome>:nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome>:nth-child(2) {
+        color: var(--orange);
+        font-size: 2.5rem;
+        font-weight: bold;
+}
+.awesome>:nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin: 1rem 0;
+}
+
+.s-button{
+    width: 8rem;
+    height: 2rem;
+}
+.cards{
+    position: relative;
+}
+.cards>* {
+    position: absolute;
+}
+.s-blur2{
+    top: 13rem;
+    left: -18rem;
+}
+.s-blur1 {
+    top: 14rem;
+    top: 8rem;
+}
+@media screen and (max-width: 480px) {
+    .services{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15rem;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+    }
+    .cards>*{
+        position: relative;
+        left: -10rem!important;
+    }
+    #card-mb:nth-of-type(1){
+        margin-bottom: 5rem;
+    }
+    #card-mb:nth-of-type(2) {
+        margin-bottom: 10rem;
+    }
+    .s-button {
+        justify-content: center;   
+            
+    }
+    #btn {
+        margin-top: 2rem;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+    }
+}
